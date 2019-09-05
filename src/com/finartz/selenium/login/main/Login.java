@@ -26,10 +26,12 @@ public class Login {
 			loginService = new LoginService(chromeService);
 			loginService.login(entry.getKey(), entry.getValue());
 
-			if(loginService.isLoginSuccessful()) {
-				System.out.println("Login successful...");
+			if(chromeService.isAlertPresent()) {
+				System.out.println("Username or Password is too short. Login Failed...");
+			}else if(loginService.isLoginSuccessful()){
+				System.out.println("Login Successful...");
 			}else {
-				System.out.println("Login failed...");
+				System.out.println("Login Failed...");
 			}
 			
 			chromeService.stop();	

@@ -13,8 +13,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class ChromeService {
 
-	private static final String CHROME_PATH = "C:\\Users\\Asus N56VZ\\Desktop\\zips_jars_exe\\Exe Files\\chromedriver_win32\\chromedriver.exe";
-	private ChromeDriverService service;
+	private static final String CHROME_PATH = "C:\\Users\\Asus N56VZ\\eclipse-workspace\\SeleniumProject\\chromedriver_win32\\chromedriver.exe";
+	private ChromeDriverService service;		
 	private WebDriver driver;
 
 	public void setup() {

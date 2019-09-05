@@ -12,10 +12,10 @@ public class UserInfo {
 	}
 	
 	public void initialize() {
-		loginInfo.put("usr", "12435");
-		//loginInfo.put("user1", "password"); // login failed case
-		//loginInfo.put("testuser","testpass"); // login successfull case
-		//loginInfo.put("melih", "1234"); // login failed case
+		loginInfo.put("usr", "12435"); // login failed case
+		loginInfo.put("user1", "password"); // login failed case
+		loginInfo.put("testuser","testpass"); // login successful case
+		loginInfo.put("melih", "1234"); // login failed case
 	}
 	
 	public Map<String, String> getLoginInfo(){
